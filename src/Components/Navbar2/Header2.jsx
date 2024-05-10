@@ -53,7 +53,7 @@ const Header2 = () => {
 
             {showMenu && (
               <div className="absolute  bg-white py-2 px-2 shadow drop-shadow-md">
-                <p className=" whitespace-nowrap cursor-pointer">New product</p>
+                <Link to='https://urbancartz-admin.netlify.app/'> <p className=" whitespace-nowrap cursor-pointer">New product</p> </Link>
                 {localStorage.getItem('auth-token')?<button onClick={() => {localStorage.removeItem('auth-token');window.location.replace('/')}}>Logout</button>:<p className=" whitespace-nowrap cursor-pointer">
                   <Link to={"login"}>Log In</Link>
                 </p>}
