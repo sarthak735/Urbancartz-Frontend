@@ -16,7 +16,7 @@ const Logins = () => {
   const login = async ()=> {
     console.log("Login Function Executed",formData);
     let responseData;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://urbancartz-backend.onrender.com/login',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -36,7 +36,7 @@ const Logins = () => {
   const signup = async ()=>{
     console.log("Sign Up Function is Executed",formData);
     let responseData;
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://urbancartz-backend.onrender.com/signup',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
